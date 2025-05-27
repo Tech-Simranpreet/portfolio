@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simranpreet Kaur - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Simranpreet Kaur</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About section -->
+    <section id="about" class="p-5 text-center bg-light">
+      <div class="container">
+        <h1>Welcome!</h1>
+        <p class="lead">
+          I am Simranpreet Kaur - a Master's of Applied Computing graduate from
+          Lincoln University with hands-on experience in building web apps using
+          Python, Flask, MySQL and Bootstrap.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5">
+      <h2 class="mb-4">Projects</h2>
+
+      <!-- Project Card -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Library Web App</h5>
+          <p class="card-text">
+            A web application for managing books, borrowing, and returns,
+            developed using Python, Flask, MySQL, HTML/CSS and Bootstrap.
+          </p>
+          <a href="#" class="btn btn-primary" target="_blank">View on Github</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="bg-light py-5">
+      <div class="container">
+        <h2>Skills</h2>
+        <span class="badge bg-primary">Python</span>
+        <span class="badge bg-secondary">Flask</span>
+        <span class="badge bg-success">HTML5</span>
+        <span class="badge bg-danger">CSS3</span>
+        <span class="badge bg-warning text-dark">JavaScript</span>
+        <span class="badge bg-info text-dark">Bootstrap</span>
+        <span class="badge bg-dark">MySQL</span>
+        <span class="badge bg-light text-dark">Git & Github</span>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="container py-5">
+      <h2>Contact</h2>
+      <form
+        action="https://formspree.io/f/xkgrabbe"
+        onsubmit="return validateForm()"
+        class="mt-4"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://tech-simranpreet.github.io/#contact"
+        />
+        <div class="mb-3">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            id="message"
+            name="message"
+            class="form-control"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <p class="mt-3">
+        Or reach out directly: <br />
+        simran1471993@icloud.com <br />
+        <a href="https://github.com/Tech-Simranpreet" target="_blank">Github</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      &copy; 2025 Simranpreet Kaur. All rights reserved.
+    </footer>
+
+    <!-- Javascript for contact validation -->
+    <script>
+      function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (!name || !email || !message) {
+          alert('Please fill in all fields.');
+          return false;
+        }
+        alert('Message sent successfully.');
+        return true;
+      }
+    </script>
+  </body>
+</html>
