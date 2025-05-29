@@ -104,3 +104,6 @@ i.fas, i.fab{
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+.row.justify-content-center > .col-md-6{
+    margin-bottom: 1.5rem;
+}
