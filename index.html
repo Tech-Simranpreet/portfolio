@@ -13,18 +13,35 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-
+    <!-- Font awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
+    >
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Simranpreet Kaur</a>
+        <a
+          class="navbar-brand d-flex align-items-center custom-brand"
+          href="#"
+          title="Simranpreet Kaur - Web Developer"
+        >
+          <i class="fas fa-code m-2"></i
+        ></a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -58,148 +75,119 @@
       </div>
     </nav>
 
+    <!-- Hero section -->
+    <section
+      class="hero d-flex align-items-center justify-content-center vh-100"
+    >
+      <div class="text-center text-white">
+        <img
+          src="OIP.jpeg"
+          alt="Simranpreet"
+          class="rounded-circle mb-4"
+          width="140"
+          height="140"
+        />
+        <h1 class="display-4 fw-bold">Hi, I'm Simranpreet Kaur</h1>
+        <p class="lead">
+          Master of Applied Computing | Crafting clean, functional, and modern
+          web apps.
+        </p>
+        <a href="#projects" class="btn btn-outline-light mt-3 shadow"
+          >View My Projects</a
+        >
+      </div>
+    </section>
+
     <!-- About section -->
     <section id="about" class="p-5 text-center bg-light">
       <div class="container">
-        <h1>Welcome!</h1>
+        <h2>About Me</h2>
         <p class="lead">
-          I am Simranpreet Kaur - a Master's of Applied Computing graduate from
-          Lincoln University with hands-on experience in building web apps using
-          Python, Flask, MySQL and Bootstrap.
+          I am a Master's of Applied Computing graduate from Lincoln University
+          with hands-on experience in building web apps using Python, Flask,
+          MySQL and Bootstrap.
         </p>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container py-5">
-      <h2 class="mb-4">Projects</h2>
-
-      <!-- Project Card -->
-      <div class="card mb-4">
-        <div class="card-body">
-          <h5 class="card-title">Library Web App</h5>
-          <p class="card-text">
-            A web application for managing books, borrowing, and returns,
-            developed using Python, Flask, MySQL, HTML/CSS and Bootstrap.
-          </p>
-          <a href="#" class="btn btn-primary" target="_blank">View on Github</a>
-        </div>
-      </div>
-    </section>
-
     <!-- Skills section -->
-    <section id="skills" class="bg-light py-5">
+    <section id="skills" class="py-5 text-center">
       <div class="container">
         <h2>Skills</h2>
-        <span class="badge bg-primary">Python</span>
-        <span class="badge bg-secondary">Flask</span>
-        <span class="badge bg-success">HTML5</span>
-        <span class="badge bg-danger">CSS3</span>
-        <span class="badge bg-warning text-dark">JavaScript</span>
-        <span class="badge bg-info text-dark">Bootstrap</span>
-        <span class="badge bg-dark">MySQL</span>
-        <span class="badge bg-light text-dark">Git & Github</span>
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+          <span class="badge bg-primary m-1">Python</span>
+          <span class="badge bg-secondary m-1">Flask</span>
+          <span class="badge bg-success m-1">HTML5</span>
+          <span class="badge bg-danger m-1">CSS3</span>
+          <span class="badge bg-warning text-dark m-1">JavaScript</span>
+          <span class="badge bg-info text-dark m-1">Bootstrap</span>
+          <span class="badge bg-dark m-1">MySQL</span>
+          <span class="badge bg-secondary m-1">Git & Github</span>
+        </div>
       </div>
     </section>
 
-    <!-- Contact section -->
-    <!-- <section id="contact" class="container py-5">
-      <h2>Contact</h2>
-       <form
-        action="https://formsubmit.co/simran1471993@gmail.com"
-        onsubmit="return validateForm()"
-        class="mt-4"
-        method="POST"
-      >
-        <input
-          type="hidden"
-          name="_next"
-          value="https://tech-simranpreet.github.io/portfolio/#contact"
-        />
-        <div class="mb-3">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="form-control"
-            placeholder="Your Name"
-            required
-          />
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Library Management System</h5>
+                <p class="card-text">
+                  A web application for managing books, borrowing, and returns,
+                  developed using Python, Flask, MySQL, HTML/CSS and Bootstrap.
+                </p>
+                <a
+                  href="https://github.com/Tech-Simranpreet"
+                  class="btn btn-outline-primary"
+                  >View on Github</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
-            placeholder="Your Email"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <textarea
-            id="message"
-            name="message"
-            class="form-control"
-            rows="5"
-            placeholder="Your Message"
-            required
-          ></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form> -->
-
-      <!-- <div class="ratio ratio-4x3">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdZvOwgmujWWrrhUBnGc36pEJcPosd0CbYMo7ZzpHafSw2Zbg/viewform?embedded=true"
-          width="640"
-          height="686"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          allowfullscreen
-          >Loading…</iframe
-        >
-      </div> -->
-    <div class="container text-center mt-4"> 
-      <p class="lead">
-        <strong>Connect with me via:</strong> </p>
-      <div class="d-flex flex-column align-items-center gap-3">
-        <a href="mailto:simran1471993@icloud.com" class="btn btn-outline-primary w-100 animated-btn" style="max-width: 300px;">
-          <i class="fas fa-envelope"></i>simran1471993@icloud.com
-        </a> 
-        <a href="https://github.com/Tech-Simranpreet" target="_blank" class="btn btn-outline-dark w-100 animated-btn" style="max-width: 300px;">
-          <i class="fab fa-github"></i>Github
-        </a>
-        
-        <a href="https://www.linkedin.com/in/simranpreet-kaur-48079b21a" target="_blank" class="btn btn-outline-info w-100 animated-btn" style="max-width: 300px;">
-          <i class="fab fa-linkedin"></i>LinkedIn
-        </a>
-
       </div>
-    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-3 text-center">
+      <div class="container">
+        <h2>Contact Me:</h2>
+        <div class="d-flex flex-column align-items-center gap-3 mt-3">
+          <a
+            href="mailto:simran1471993@icloud.com"
+            class="btn btn-outline-primary w-100 animated-btn"
+            style="max-width: 300px"
+          >
+            <i class="fas fa-envelope"></i>simran1471993@icloud.com
+          </a>
+          <a
+            href="https://github.com/Tech-Simranpreet"
+            target="_blank"
+            class="btn btn-outline-dark w-100 animated-btn"
+            style="max-width: 300px"
+          >
+            <i class="fab fa-github"></i>Github
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/simranpreet-kaur-48079b21a"
+            target="_blank"
+            class="btn btn-outline-info w-100 animated-btn"
+            style="max-width: 300px"
+          >
+            <i class="fab fa-linkedin"></i>LinkedIn
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center p-4 mt-5">
       &copy; 2025 Simranpreet Kaur. All rights reserved.
     </footer>
-
-    <!-- Javascript for contact validation -->
-    <!-- <script>
-      function validateForm() {
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        if (!name || !email || !message) {
-          alert('Please fill in all fields.');
-          return false;
-        }
-        alert('Message sent successfully.');
-        return true;
-      }
-    </script> -->
   </body>
 </html>

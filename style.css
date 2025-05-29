@@ -1,18 +1,72 @@
 body{
-    font-family: 'Poppins', sans-serif ;
-    background-color: #f4f4f9;
+    font-family: 'Inter', sans-serif ;
+    background-color: #f8f9fa;
     color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 h1,h2{
-    font-weight: 600;
+    font-weight: 700;
     color: #0d6efd;
 }
 
 .navbar{
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
 }
 
+.navbar .fa-code{
+    font-size: 1.2rem;
+    color: #0d6efd;
+}
+
+.custom-brand{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2c3e50 !important;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 28px;
+    height: 28px;
+}
+
+.custom-brand:hover{
+    color: #0d6efd !important;
+    text-decoration: none;
+}
+
+.custom-brand img{
+    border-radius: 50%;
+}
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("simweb.jpg") center/cover no-repeat;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hero h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 80px 0;
+}
 .card{
     border: none;
     border-radius: 15px;
@@ -32,9 +86,8 @@ h1,h2{
  background-color: #5a32a3;   
 }
 
-.footer{
-    background-color: #0d6efd;
-    color: #fff;
+footer{
+    background-color: #26598d;
 }
 
 i.fas, i.fab{
