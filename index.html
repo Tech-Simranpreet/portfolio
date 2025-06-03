@@ -163,11 +163,17 @@
                   schedule and workout plans.
                 </p>
                 <a
-                  href="https://gym-management-system-ayaq.onrender.com"
-                  class="btn btn-outline-primary"
-                  target="_blank"
-                  >View on Github</a
+                  href="#"
+                  class="btn btn-outline-primary me-2"
+                  onclick="showLoaderAndRedirect('https://gym-management-system-ayaq.onrender.com')"
+                  >Open App</a
                 >
+                <a
+                  href="https://github.com/Tech-Simranpreet/GymManagementSystem"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  >View on Github
+                </a>
               </div>
             </div>
           </div>
@@ -179,9 +185,17 @@
                   A web-based tool that allows employees to apply for leave and
                   managers to approve or reject requests.
                 </p>
+
                 <a
-                  href="https://leave-management-system-wqx3.onrender.com"
-                  class="btn btn-outline-primary"
+                  href="#"
+                  class="btn btn-outline-primary me-2"
+                  onclick="showLoaderAndRedirect('https://leave-management-system-wqx3.onrender.com')"
+                  >Open App</a
+                >
+                <a
+                  href="https://github.com/Tech-Simranpreet/Leave-Management-System"
+                  class="btn btn-outline-dark"
+                  target="_blank"
                   >View on Github</a
                 >
               </div>
@@ -190,6 +204,26 @@
         </div>
       </div>
     </section>
+
+    <!-- Loader Overlay -->
+    <div
+      id="loader"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 9999;
+        text-align: center;
+        padding-top: 200px;
+        font-size: 24px;
+      "
+    >
+      App is loading....Please wait a moment!
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="py-3 text-center">
@@ -228,5 +262,16 @@
     <footer class="bg-dark text-white text-center p-4 mt-5">
       &copy; 2025 Simranpreet Kaur. All rights reserved.
     </footer>
+
+    <!-- Redirect script-->
+    <script>
+      function showLoaderAndRedirect(url) {
+        document.getElementById('loader').style.display = 'block';
+        setTimeout(function () {
+          window.open(url, '_blank');
+          document.getElementById('loader').style.display = 'none';
+        }, 1500);
+      }
+    </script>
   </body>
 </html>
