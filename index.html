@@ -27,6 +27,11 @@
       integrity="sha512-..."
       crossorigin="anonymous"
     />
+    <!-- Animation css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!--Navigation-->
@@ -68,7 +73,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -87,12 +92,20 @@
           width="140"
           height="140"
         />
-        <h1 class="display-4 fw-bold">Hi, I'm Simranpreet Kaur</h1>
-        <p class="lead">
-          Web Developer | Passionate about crafting elegant, scalable, and
-          user-centric web applications.
-        </p>
-        <a href="#projects" class="btn btn-outline-light mt-3 shadow"
+        <h1
+          class="display-4 fw-bold animate__animated animate__lightSpeedInLeft"
+        >
+          Hi, I'm Simranpreet Kaur
+        </h1>
+        <div class="typing-wrapper">
+          <p class="lead typing-effect">
+            Web Developer | Passionate about crafting elegant, scalable, and
+            user-centric web applications.
+          </p>
+        </div>
+        <a
+          href="#projects"
+          class="btn btn-outline-light mt-3 shadow view-projects-btn"
           >View My Projects</a
         >
       </div>
@@ -138,7 +151,7 @@
           Jinja, and Bootstrap.
         </p>
         <div class="row justify-content-center">
-          <!-- <div class="col-md-6">
+          <div class="col-md-6">
             <div class="card shadow-sm border-top border-4 border-primary">
               <div class="card-body">
                 <h5 class="card-title">Library Management System</h5>
@@ -153,7 +166,7 @@
                 >
               </div>
             </div>
-          </div> -->
+          </div>
           <div class="col-md-6">
             <div class="card shadow-sm border-top border-4 border-secondary">
               <div class="card-body">
@@ -164,7 +177,8 @@
                 </p>
                 <a
                   href="https://spreet.pythonanywhere.com/"
-                  class="btn btn-outline-primary me-2">Open App</a
+                  class="btn btn-outline-primary me-2"
+                  >Open App</a
                 >
                 <a
                   href="https://github.com/Tech-Simranpreet/GymManagementSystem"
@@ -187,7 +201,6 @@
                 <a
                   href="https://simran.pythonanywhere.com/"
                   class="btn btn-outline-primary me-2"
-            
                   >Open App</a
                 >
                 <a
@@ -202,8 +215,6 @@
         </div>
       </div>
     </section>
-
-    
 
     <!-- Contact Section -->
     <section id="contact" class="py-3 text-center">
@@ -242,7 +253,5 @@
     <footer class="bg-dark text-white text-center p-4 mt-5">
       &copy; 2025 Simranpreet Kaur. All rights reserved.
     </footer>
-
-   
   </body>
 </html>
