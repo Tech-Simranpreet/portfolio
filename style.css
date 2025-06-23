@@ -260,6 +260,7 @@ i.fas, i.fab{
   top: 0;
   font-size: 2rem;
   animation: floatUpDown 3s ease-in-out infinite;
+  opacity: 0.8;
 }
 
 @keyframes floatUpDown {
