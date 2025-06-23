@@ -256,10 +256,10 @@ i.fas, i.fab{
 }
 
 .floating.icons {
-        position: relative;
-        height: 60px;
-        width: 100%;
-        margin-bottom: 20px;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .floating.icons i {
@@ -267,7 +267,23 @@ i.fas, i.fab{
   top: 0;
   font-size: 2rem;
   animation: floatUpDown 3s ease-in-out infinite;
-  opacity: 0;
+  opacity: 0.8;
+}
+
+.floating.icons i:nth-child(1) {
+  left: 10%;
+}
+.floating.icons i:nth-child(2) {
+  left: 30%;
+}
+.floating.icons i:nth-child(3) {
+  left: 50%;
+}
+.floating.icons i:nth-child(4) {
+  left: 70%;
+}
+.floating.icons i:nth-child(5) {
+  left: 90%;
 }
 
 @keyframes floatUpDown {
@@ -278,4 +294,5 @@ i.fas, i.fab{
     transform: translateY(-15px);
   }
 }
+
 
