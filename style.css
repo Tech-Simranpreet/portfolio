@@ -129,8 +129,9 @@ i.fas, i.fab{
     animation: typing 6s steps(100, end) 1.5s forwards, blinkCursor 0.75s step-end infinite;
     max-width: 100%;
     text-align: center;
-    min-height: 2.5rem;
-    vertical-align: top;
+    line-height: 1;
+    vertical-align: bottom;
+    padding-right: 2px;
 }
 
 @keyframes typing {
@@ -144,7 +145,7 @@ i.fas, i.fab{
 }
 
 .typing-wrapper{
-    min-height: 2.5rem;
+   
     display: flex;
     justify-content: center;
     opacity: 0;
