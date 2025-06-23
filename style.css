@@ -255,44 +255,6 @@ i.fas, i.fab{
     transform: translate(-5px);
 }
 
-.floating.icons {
-  position: relative;
-  height: 80px;
-  width: 100%;
-  margin-bottom: 20px;
-}
 
-.floating.icons i {
-  position: absolute;
-  top: 0;
-  font-size: 2rem;
-  animation: floatUpDown 3s ease-in-out infinite;
-  opacity: 0.8;
-}
-
-.floating.icons i:nth-child(1) {
-  left: 10%;
-}
-.floating.icons i:nth-child(2) {
-  left: 30%;
-}
-.floating.icons i:nth-child(3) {
-  left: 50%;
-}
-.floating.icons i:nth-child(4) {
-  left: 70%;
-}
-.floating.icons i:nth-child(5) {
-  left: 90%;
-}
-
-@keyframes floatUpDown {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
 
 
