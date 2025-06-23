@@ -125,11 +125,10 @@ i.fas, i.fab{
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 3px solid orange;
-    animation: typing 6s steps(100, end) 1.5s forwards, blinkCursor 0.75s step-end infinite;
     max-width: 100%;
     text-align: center;
     min-height: 2.5rem;
+    vertical-align: top;
 }
 
 @keyframes typing {
@@ -143,9 +142,11 @@ i.fas, i.fab{
 }
 
 .typing-wrapper{
-    min-height: 2.5rem;
+   
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 2.5rem;
     opacity: 0;
     animation: fadeIn 0.1s ease-in 1.5s forwards;
 }
@@ -254,16 +255,13 @@ i.fas, i.fab{
     transform: translate(-5px);
 }
 
-
-
-.floating.icons{
+.floating.icons {
     position: relative;
     height: 50px;
     width: 100%;
     margin-bottom: 20px;
-}
-
-.floating.icons i{
+  }
+  .floating.icons i {
     position: absolute;
     top: 0;
     font-size: 1.5rem;
@@ -272,14 +270,12 @@ i.fas, i.fab{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-}
-
-@keyframes floatUpDown {
+  }
+  @keyframes floatUpDown {
     0%, 100% {
-        transform: translateY(0);
+      transform: translateY(0);
     }
-    50%{
-        transform: translateY(-8px);
+    50% {
+      transform: translateY(-8px);
     }
-    }
-    
+  }
