@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <title>Simranpreet Kaur - Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,6 +27,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!--Navigation-->
@@ -40,7 +38,7 @@
     >
       <div class="container">
         <a
-          class="navbar-brand d-flex align-items-center custom-brand"
+          class="navbar-brand"
           href="#"
           title="Simranpreet Kaur - Web Developer"
         >
@@ -82,40 +80,39 @@
 
     <!-- Hero section -->
     <section
-      class="hero d-flex align-items-center justify-content-center vh-100"
+      class="hero d-flex flex-column align-items-center justify-content-center text-center"
     >
-      <div class="text-center text-white">
-        <img
-          src="images\OIP.jpeg"
-          alt="Simranpreet"
-          class="rounded-circle mb-4"
-          width="140"
-          height="140"
-        />
-        <h1
-          class="display-4 fw-bold animate__animated animate__lightSpeedInLeft"
-        >
-          Hi, I'm Simranpreet Kaur
-        </h1>
-        <div class="typing-wrapper">
-          <p class="lead typing-effect">
-            Web Developer | Passionate about crafting elegant, scalable, and
-            user-centric web applications.
-          </p>
-        </div>
-        <a
-          href="#projects"
-          class="btn btn-outline-light mt-3 shadow view-projects-btn"
-          >View My Projects</a
-        >
+      <div class="floating icons">
+        <i class="fab fa-python" style="left: 10%; animation-delay: 0s"></i>
+        <i class="fab fa-html5" style="left: 30%; animation-delay: 1s"></i>
+        <i class="fab fa-css3-alt" style="left: 50%; animation-delay: 2s"></i>
+        <i class="fab fa-bootstrap" style="left: 70%; animation-delay: 3s"></i>
+        <i class="fab fa-github" style="left: 90%; animation-delay: 4s"></i>
       </div>
+
+      <h1 class="display-4 fw-bold" data-aos="fade-down">
+        Hi, I'm Simranpreet Kaur
+      </h1>
+      <p class="lead typing-effect text-white" data-aos="zoom-in">
+        Web Developer
+      </p>
+
+      <a href="#projects" class="btn btn-outline-light mt-3 shadow"
+        >View My Projects</a
+      >
+
     </section>
 
     <!-- About section -->
-    <section id="about" class="p-5 text-center bg-light">
+    <section
+      id="about"
+      class="section bg-light text-center position-relative"
+      data-aos="fade-up"
+    >
+      <div class="section-marker"></div>
       <div class="container">
-        <h2>About Me</h2>
-        <p class="lead">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead mt-3" data-aos="fade-up">
           I hold a Master's degree in Applied Computing from Lincoln University.
           My strengths lie in building full-stack web applications using
           technologies like Python, Flask, HTML, CSS, MySQL and Bootstrap. I
@@ -126,33 +123,82 @@
     </section>
 
     <!-- Skills section -->
-    <section id="skills" class="py-3 text-center">
+    <section id="skills" class="section text-center bg-white position-relative">
+      <div class="section-marker"></div>
       <div class="container">
-        <h2>Skills</h2>
-        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
-          <span class="badge bg-primary m-1">Python</span>
-          <span class="badge bg-secondary m-1">Flask</span>
-          <span class="badge bg-success m-1">HTML5</span>
-          <span class="badge bg-danger m-1">CSS3</span>
-          <span class="badge bg-warning text-dark m-1">JavaScript</span>
-          <span class="badge bg-info text-dark m-1">Bootstrap</span>
-          <span class="badge bg-dark m-1">MySQL</span>
-          <span class="badge bg-secondary m-1">Git & Github</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="row justify-content-center pt-4" data-aos="fade-up">
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.1; --random-y: 0.7;">
+            <i class="fab fa-python fa-4x text-primary"></i>
+            <p class="mt-2">Python</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.8; --random-y: 0.3;">
+            <i class="fab fa-html5 fa-4x text-danger"></i>
+            <p class="mt-2">HTML5</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.6; --random-y: 0.9;">
+            <i class="fab fa-css3-alt fa-4x text-info"></i>
+            <p class="mt-2">CSS3</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.4; --random-y: 0.2;">
+            <i class="fab fa-bootstrap fa-4x" style="color: #7952b3"></i>
+            <p class="mt-2">Bootstrap</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.5; --random-y: 0.6;">
+            <i class="fab fa-github fa-4x text-dark"></i>
+            <p class="mt-2">Github</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.7; --random-y: 0.8;">
+            <i class="fab fa-js fa-4x text-warning"></i>
+            <p class="mt-2">JavaScript</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.2; --random-y: 0.4;">
+            <i class="fas fa-database fa-4x text-success"></i>
+            <p class="mt-2">MySQL</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.3; --random-y: 0.9;">
+            <i class="fas fa-leaf fa-4x text-success"></i>
+            <p class="mt-2">MongoDB</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.9; --random-y: 0.1;">
+            <i class="fas fa-database fa-4x text-primary"></i>
+            <p class="mt-2">PostgreSQL</p>
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.2; --random-y: 0.3;">
+            <i class="fab fa-php fa-4x text-primary"></i>
+            <p class="mt-2">PHP</p>
+          </div>
+           <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.5; --random-y: 0.5;">
+            <i class="fab fa-drupal fa-4x text-info"></i>
+            <p class="mt-2">Drupal</p>
+          </div>
+           <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.4; --random-y: 0.7;">
+            <i class="fab fa-docker fa-4x text-info"></i>
+            <p class="mt-2">Docker</p>
+          </div>
+           <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.6; --random-y: 0.6;">
+            <i class="fab fa-wordpress fa-4x text-info"></i>
+            <p class="mt-2">WordPress</p>
+
+          </div>
+          <div class="col-md-2 col-4 mb-4 skills-icon-wrapper" style="--random-x: 0.3; --random-y: 0.5;">
+            <i class="fas fa-code fa-4x text-dark"></i>
+            <p class="mt-2">C#</p>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-white">
+    <section
+      id="projects"
+      class="section bg-light text-center position-relative"
+    >
+      <div class="section-marker"></div>
       <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <p class="text-center fst-italic mb-4">
-          All projects are developed using Python, Flask, MySQL, HTML/CSS,
-          Jinja, and Bootstrap.
-        </p>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="card shadow-sm border-top border-4 border-secondary">
+        <h2 class="section-title">Projects</h2>
+        <div class="row pt-4">
+          <div class="col-md-6 mb-4" data-aos="zoom-in">
+            <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">Library Management System</h5>
                 <p class="card-text">
@@ -173,8 +219,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card shadow-sm border-top border-4 border-secondary">
+          <div class="col-md-6 mb-4" data-aos="zoom-in">
+            <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">Gym Management System</h5>
                 <p class="card-text">
@@ -195,8 +241,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card shadow-sm border-top border-4 border-warning">
+          <div class="col-md-6 mb-4" data-aos="zoom-in">
+            <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">Leave Management System</h5>
                 <p class="card-text">
@@ -223,25 +269,31 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-3 text-center">
+    <section
+      id="contact"
+      class="section text-center bg-white position-relative"
+    >
+      <div class="section-marker"></div>
       <div class="container">
-        <h2>Contact Me:</h2>
-        <div class="d-flex flex-column align-items-center gap-3 mt-3">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="mt-4" data-aos="fade-up">
+          <div class="mb-3">
           <a
             href="mailto:simran1471993@icloud.com"
-            class="btn btn-outline-primary w-100 animated-btn"
-            style="max-width: 300px"
+            class="btn btn-outline-primary me-2"
           >
             <i class="fas fa-envelope"></i>simran1471993@icloud.com
           </a>
+          </div>
+          <div class="mb-3">
           <a
             href="https://github.com/Tech-Simranpreet"
             target="_blank"
-            class="btn btn-outline-dark w-100 animated-btn"
-            style="max-width: 300px"
+            class="btn btn-outline-dark"
           >
             <i class="fab fa-github"></i>Github
           </a>
+          </div>
         </div>
       </div>
     </section>
@@ -250,5 +302,44 @@
     <footer class="bg-dark text-white text-center p-4 mt-5">
       &copy; 2025 Simranpreet Kaur. All rights reserved.
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed('.typing-effect', {
+        strings: ['Web Developer', 'Flask Developer', 'Full Stack Enthusiast'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+
+     <script>
+      const shown = new Set();
+      window.addEventListener("scroll", () => {
+        const skillsSection = document.querySelector("#skills");
+        const iconWrappers = document.querySelectorAll(".skills-icon-wrapper");
+        const trigger = window.innerHeight * 0.75;
+        const rect = skillsSection.getBoundingClientRect();
+
+        if (rect.top < trigger) {
+          iconWrappers.forEach((el, index) => {
+            if (!shown.has(el)) {
+              el.style.setProperty('--random-x', Math.random().toFixed(2));
+              el.style.setProperty('--random-y', Math.random().toFixed(2));
+              setTimeout(() => {
+                el.classList.add("visible");
+                shown.add(el);
+              }, index * 150);
+            }
+          });
+        }
+      });
+      </script>
   </body>
 </html>
