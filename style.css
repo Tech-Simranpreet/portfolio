@@ -253,3 +253,33 @@ i.fas, i.fab{
 .project-card:hover{
     transform: translate(-5px);
 }
+
+
+
+.floating.icons{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.floating.icons i{
+    position: absolute;
+    top: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    animation-name: floatUpDown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    }
+    
