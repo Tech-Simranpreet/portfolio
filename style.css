@@ -129,8 +129,9 @@ i.fas, i.fab{
     animation: typing 6s steps(100, end) 1.5s forwards, blinkCursor 0.75s step-end infinite;
     max-width: 100%;
     text-align: center;
-    line-height: 1;
-    vertical-align: bottom;
+    line-height: 1.2;
+    vertical-align: middle;
+    height: auto;
     padding-right: 2px;
 }
 
@@ -148,6 +149,8 @@ i.fas, i.fab{
    
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 2.5rem;
     opacity: 0;
     animation: fadeIn 0.1s ease-in 1.5s forwards;
 }
